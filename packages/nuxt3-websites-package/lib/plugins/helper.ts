@@ -4,4 +4,4 @@ export default defineNuxtPlugin(nuxtApp => {
       hello: (msg: string) => `Hello ${msg}!`
     }
   }
-})
+});

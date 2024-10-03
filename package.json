@@ -31,9 +31,14 @@
     "vue-router": "latest"
   },
   "lint-staged": {
-    "**/*.{js,ts,tsx}": [
+    "**/*.{js,ts,tsx,vue}": [
       "eslint --fix"
     ],
     "**/*": "prettier --write --ignore-unknown"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pnpm exec lint-staged"
+    }
   }
 }
